@@ -25,7 +25,7 @@ const Top = () => {
                         <Link href={"/community"}>
                             <div>Community</div>
                         </Link>
-                        <Link href={"/contact"}>
+                        <Link href={"/cs"}>
                             <div>Contact Us</div>
                         </Link>
                     </Box>

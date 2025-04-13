@@ -1,6 +1,7 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
 import Top from "../Top";
+import Footer from "../Footer";
 
 
 const withLayoutBasic = (Component: any) => {
@@ -19,7 +20,7 @@ const withLayoutBasic = (Component: any) => {
                         style={{
                             backgroundImage: "url('/img/banner/properties.png')",
                             backgroundSize: "cover",
-                            boxShadow: "inset 10px 40px 150px rgba(24 22 36)",
+                            boxShadow: "inset 10px 40px 150px 40px rgba(24 22 36)",
                         }}
                     >
                         <Stack className={"container"}>
@@ -33,7 +34,9 @@ const withLayoutBasic = (Component: any) => {
                         <Component {...props} />
                     </Stack>
 
-                    <Stack sx={{ background: "#a1887f" }}>Footer</Stack>
+                    <Stack id={"footer"}>
+                        <Footer />
+                    </Stack>
                 </Stack>
             </>
         )

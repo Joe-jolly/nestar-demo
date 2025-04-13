@@ -1,8 +1,7 @@
 import { Box, Stack } from "@mui/material"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const HeaderFilter = () =>
-{
+const HeaderFilter = () => {
     return (
         <>
             <Stack className={"search-box"}>
